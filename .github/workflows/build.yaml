@@ -43,4 +43,4 @@ jobs:
               -Dsonar.projectName='microservice-4' \
               -Dsonar.host.url=${{ env.SONAR_HOST_URL }} \
               -Dsonar.login=${{ env.SONAR_LOGIN }} \
-              -Dsonar.password=${{ env.SONAR_PASSWORD }}
+              -Dsonar.password=${{ env.SONAR_PASSWORD }} 
