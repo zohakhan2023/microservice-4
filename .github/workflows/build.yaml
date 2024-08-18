@@ -37,6 +37,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           mvn -f accounts/pom.xml -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=zohakhan2023_microservice-4
-          curl -u ${{ secrets.SONAR_TOKEN }}: "https://sonarcloud.io/api/zohakhan2023/accounts/qualityprofiles/search"
-          curl -u ${{ secrets.SONAR_TOKEN }}: "https://sonarcloud.io/api/zohakhan2023/accounts/qualitygates/list"
+          curl -u ${{ secrets.SONAR_TOKEN }}: "https://sonarcloud.io/api/qualityprofiles/search?project=zohakhan2023_microservice-4&organization=zohakhan2023"
+          curl -u ${{ secrets.SONAR_TOKEN }}: "https://sonarcloud.io/api/qualityprofiles/search?project=zohakhan2023_microservice-4&organization=zohakhan2023"
           
