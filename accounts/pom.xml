@@ -18,7 +18,7 @@
 		<java.version>21</java.version>
 		 <sonar.organization>zohakhan2023</sonar.organization>
   		 <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-		<jacoco-maven-plugin>0.8.6</jacoco-maven-plugin>
+		<jacoco-maven-plugin>0.8.11</jacoco-maven-plugin>
 	</properties>
 	<dependencies>
 		<dependency>
