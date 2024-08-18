@@ -39,8 +39,8 @@ jobs:
           SONAR_PASSWORD: ${{ secrets.SONAR_PASSWORD }}       
         run: | 
             mvn -f accounts/pom.xml -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-              -Dsonar.projectKey=microservice-4/accounts \
-              -Dsonar.projectName=microservice-4/accounts \
+              -Dsonar.projectKey=microservice-4 \
+              -Dsonar.projectName='microservice-4' \
               -Dsonar.host.url=${{ env.SONAR_HOST_URL }} \
               -Dsonar.login=${{ env.SONAR_LOGIN }} \
               -Dsonar.password=${{ env.SONAR_PASSWORD }}
