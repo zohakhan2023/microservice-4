@@ -36,5 +36,5 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
           SONAR_LOGIN: ${{ env.SONAR_LOGIN }} 
-          PASSWORD: ${{ env.SONAR_PASSWORD }}
-        run: mvn -f accounts/pom.xml -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=microservice-4 -Dsonar.projectName='microservice-4 -Dsonar.host.url=${{ env.SONAR_HOST_URL }}'
+          SONAR_PASSWORD: ${{ env.SONAR_PASSWORD }}
+        run: mvn -f accounts/pom.xml -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=microservice-4/account -Dsonar.projectName='microservice-4/accounts -Dsonar.host.url=${{ env.SONAR_HOST_URL }} -Dsonar.login=${{ env.SONAR_LOGIN }} -Dsonar.password=${{ env.SONAR_PASSWORD }}'
